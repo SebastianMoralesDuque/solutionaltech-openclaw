@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="SolutionalTech | Automatización con IA">
+	<main class="max-w-6xl mx-auto px-4 py-20">
+		<!-- Hero Section -->
+		<section class="text-center space-y-8 mb-32">
+			<h1 class="text-6xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+				Escalamos tu negocio con Inteligencia Artificial
+			</h1>
+			<p class="text-xl text-slate-400 max-w-2xl mx-auto">
+				Dejamos de lado las tareas repetitivas para que te enfoques en crecer. Implementamos sistemas autónomos que trabajan por ti 24/7.
+			</p>
+			<div class="flex justify-center gap-4">
+				<a href="#" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-bold transition">
+					Agenda una consulta gratuita
+				</a>
+				<a href="#servicios" class="border border-slate-700 hover:bg-slate-900 px-8 py-3 rounded-full font-bold transition">
+					Ver servicios
+				</a>
+			</div>
+		</section>
+
+		<!-- Problema vs Solución -->
+		<section class="grid md:grid-cols-2 gap-12 mb-32 items-center">
+			<div class="space-y-6">
+				<h2 class="text-3xl font-bold">¿Tu equipo está saturado?</h2>
+				<p class="text-slate-400">
+					Las tareas manuales y la respuesta lenta a clientes están frenando tu crecimiento. Los costes operativos suben mientras la eficiencia se estanca.
+				</p>
+			</div>
+			<div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+				<h2 class="text-3xl font-bold text-emerald-400 mb-6">La Solución SolutionalTech</h2>
+				<ul class="space-y-4 text-slate-300">
+					<li class="flex items-center gap-2">
+						<span class="text-emerald-500">✔</span> Procesos optimizados que funcionan solos.
+					</li>
+					<li class="flex items-center gap-2">
+						<span class="text-emerald-500">✔</span> Atención inmediata a cada prospecto.
+					</li>
+					<li class="flex items-center gap-2">
+						<span class="text-emerald-500">✔</span> Estructura escalable basada en IA.
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Servicios -->
+		<section id="servicios" class="space-y-12">
+			<h2 class="text-4xl font-bold text-center">Nuestros Servicios</h2>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500 transition">
+					<h3 class="text-xl font-bold mb-4">Chatbots de IA</h3>
+					<p class="text-slate-400">Atención al cliente y captación de leads 24/7 con lenguaje natural.</p>
+				</div>
+				<div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500 transition">
+					<h3 class="text-xl font-bold mb-4">Workflows</h3>
+					<p class="text-slate-400">Conectamos tus herramientas para que hablen entre sí sin intervención manual.</p>
+				</div>
+				<div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500 transition">
+					<h3 class="text-xl font-bold mb-4">Agentes a medida</h3>
+					<p class="text-slate-400">Soluciones personalizadas para análisis de datos o procesos específicos.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
