@@ -1,10 +1,9 @@
 # Diario de Progreso - SolutionalTech
 
-## [2026-02-12] Día 2: Desarrollo del Core y Copywriting
-- **Estado:** Completado.
-- **Acciones:**
-  - Configurado el entorno de desarrollo con **Astro** y **Tailwind CSS**.
-  - Redactado el copywriting estratégico para la landing page (`COPY.md`).
-  - Creado el Layout base y la página de inicio (`index.astro`) con estética "Tech/Dark Mode".
-  - Implementadas secciones de Hero, Problema vs Solución y Servicios.
-  - El proyecto ya es funcional visualmente y está listo para refinamiento UI.
+## [2026-02-14] Día 4: Optimización UI/UX y Navegación
+- **Estado:** En progreso.
+- **Acciones Realizadas:**
+  - **Navegación:** Implementado Navbar fixed con efecto backdrop-blur y diseño profesional.
+  - **UX:** Activado smooth scrolling nativo en el layout para mejorar la navegación interna.
+  - **UI Refinement:** Añadido Call-to-Action secundario en el navbar y ajuste de espaciados para evitar solapamientos con el header fijo.
+- **Siguiente Paso:** Finalizar test de velocidad, optimización de meta-tags SEO y preparar configuración de Nginx para el despliegue.
