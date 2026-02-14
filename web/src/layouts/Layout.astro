@@ -11,11 +11,33 @@ import '../styles/global.css';
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="SolutionalTech - Agencia de Automatización con IA" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO -->
 		<title>{title}</title>
+		<meta name="description" content="SolutionalTech: Optimizamos tu negocio con automatizaciones personalizadas e Inteligencia Artificial. Escalabilidad real para empresas B2B." />
+		<meta name="keywords" content="IA, automatización, business intelligence, chatbots, workflows, eficiencia, B2B" />
+		<link rel="canonical" href="https://solutionaltech.ai" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://solutionaltech.ai" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content="Escale su negocio con sistemas autónomos de IA. Reduzca costes operativos y mejore la experiencia del cliente." />
+		<meta property="og:image" content="/og-image.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://solutionaltech.ai" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content="Escale su negocio con sistemas autónomos de IA. Reduzca costes operativos y mejore la experiencia del cliente." />
+		<meta property="twitter:image" content="/og-image.jpg" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	</head>
 	<body class="bg-slate-950 text-white font-sans scroll-smooth">
 		<slot />
