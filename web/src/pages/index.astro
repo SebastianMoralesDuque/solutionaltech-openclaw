@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ServiceCard from '../components/ServiceCard.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
 import ContactForm from '../components/ContactForm.astro';
 ---
 
@@ -21,6 +22,7 @@ import ContactForm from '../components/ContactForm.astro';
 			<div class="hidden md:flex gap-8 text-slate-400 font-medium text-sm uppercase tracking-wider">
 				<a href="#servicios" class="hover:text-blue-400 transition">Servicios</a>
 				<a href="#beneficios" class="hover:text-blue-400 transition">Beneficios</a>
+				<a href="#testimonios" class="hover:text-blue-400 transition">Testimonios</a>
 				<a href="#contacto" class="hover:text-blue-400 transition">Contacto</a>
 			</div>
 			<a href="#contacto" class="hidden sm:block bg-blue-600/10 text-blue-400 border border-blue-600/20 px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-600 hover:text-white transition">
@@ -31,6 +33,7 @@ import ContactForm from '../components/ContactForm.astro';
 		<div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-b border-slate-900 py-4 px-4 space-y-4">
 			<a href="#servicios" class="block text-slate-400 hover:text-blue-400 transition text-sm uppercase tracking-wider font-medium">Servicios</a>
 			<a href="#beneficios" class="block text-slate-400 hover:text-blue-400 transition text-sm uppercase tracking-wider font-medium">Beneficios</a>
+			<a href="#testimonios" class="block text-slate-400 hover:text-blue-400 transition text-sm uppercase tracking-wider font-medium">Testimonios</a>
 			<a href="#contacto" class="block text-slate-400 hover:text-blue-400 transition text-sm uppercase tracking-wider font-medium">Contacto</a>
 		</div>
 	</header>
@@ -151,6 +154,35 @@ import ContactForm from '../components/ContactForm.astro';
 			</div>
 		</section>
 
+		<!-- Testimonios -->
+		<section id="testimonios" class="space-y-16 mb-40">
+			<div class="text-center space-y-4">
+				<h2 class="text-4xl md:text-5xl font-bold">Casos de Éxito</h2>
+				<p class="text-slate-400 max-w-2xl mx-auto">Lo que dicen las empresas que ya han dado el salto a la automatización.</p>
+			</div>
+			
+			<div class="grid md:grid-cols-3 gap-8">
+				<TestimonialCard 
+					quote="La automatización de nuestro CRM ahorró 20 horas semanales a mi equipo de ventas. Increíble." 
+					author="Carlos M." 
+					role="CEO" 
+					company="TechFlow" 
+				/>
+				<TestimonialCard 
+					quote="El chatbot de ST maneja el 80% de mis dudas iniciales. La conversión subió un 15%." 
+					author="Elena R." 
+					role="Operations" 
+					company="GlobalLogistics" 
+				/>
+				<TestimonialCard 
+					quote="SolutionalTech entendió exactamente lo que necesitábamos. Implementación rápida y sin fricción." 
+					author="Marcos S." 
+					role="Fundador" 
+					company="GrowthNexus" 
+				/>
+			</div>
+		</section>
+
 		<!-- Contacto -->
 		<ContactForm />
 
@@ -161,3 +193,4 @@ import ContactForm from '../components/ContactForm.astro';
 		</footer>
 	</main>
 </Layout>
+
