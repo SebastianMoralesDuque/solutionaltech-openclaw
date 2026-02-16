@@ -7,7 +7,7 @@
             <p class="text-slate-400">Cuéntanos sobre tu negocio y un experto en IA se pondrá en contacto contigo.</p>
         </div>
 
-        <form class="space-y-6">
+        <form id="contact-form" class="space-y-6">
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="space-y-2">
                     <label for="name" class="text-sm font-medium text-slate-300 ml-1">Nombre</label>
@@ -57,11 +57,46 @@
 
             <button 
                 type="submit" 
-                class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-900/20 transition-all transform hover:-translate-y-1 active:scale-95"
+                id="submit-btn"
+                class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-900/20 transition-all transform hover:-translate-y-1 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-                Enviar propuesta
+                <span id="btn-text">Enviar propuesta</span>
             </button>
+            <div id="form-message" class="hidden text-center text-sm p-4 rounded-xl"></div>
         </form>
+
+        <script>
+            const form = document.getElementById('contact-form') as HTMLFormElement;
+            const btn = document.getElementById('submit-btn') as HTMLButtonElement;
+            const btnText = document.getElementById('btn-text');
+            const formMsg = document.getElementById('form-message');
+
+            form?.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                // UI States
+                btn.disabled = true;
+                if (btnText) btnText.textContent = 'Enviando...';
+
+                // Simulate API call (Frontend persona focus)
+                await new Promise(resolve => setTimeout(resolve, 1500));
+
+                if (formMsg) {
+                    formMsg.classList.remove('hidden', 'bg-red-500/10', 'text-red-400', 'bg-emerald-500/10', 'text-emerald-400');
+                    formMsg.classList.add('bg-emerald-500/10', 'text-emerald-400');
+                    formMsg.textContent = '¡Gracias! Tu mensaje ha sido enviado con éxito. Te contactaremos pronto.';
+                }
+
+                form.reset();
+                if (btnText) btnText.textContent = 'Propuesta Enviada';
+                
+                setTimeout(() => {
+                    btn.disabled = false;
+                    if (btnText) btnText.textContent = 'Enviar propuesta';
+                    formMsg?.classList.add('hidden');
+                }, 5000);
+            });
+        </script>
         
         <p class="text-center text-xs text-slate-500 mt-6 italic">
             * Te responderemos en menos de 24 horas hábiles.

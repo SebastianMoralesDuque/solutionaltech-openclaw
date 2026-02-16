@@ -1,5 +1,13 @@
 # Diario de Progreso - SolutionalTech
 
+## [2026-02-16] Día 6: Entrega de Artefactos Frontend y QA Final
+- **Estado:** Frontend 100% Listo para Producción.
+- **Acciones Realizadas:**
+  - **Optimización de Assets:** Generación exitosa del build de producción (`npm run build`).
+  - **Verificación de Enlaces:** Comprobación manual de anclas internas y navegación mobile.
+  - **Preparación para Despliegue:** Estructura de archivos en `dist/` validada para servir vía Nginx.
+- **Siguiente Paso:** Sebastian procederá con la configuración de Nginx en la instancia de Oracle Cloud.
+
 ## [2026-02-15] Día 5: Pulido Frontend y Preparación de Entrega
 - **Estado:** Finalizado Ciclo Frontend.
 - **Acciones Realizadas:**
