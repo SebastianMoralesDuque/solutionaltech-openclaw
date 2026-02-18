@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** Estructura base
 **En progreso:** Ninguna
-**Completadas:** 5
-**Pendientes:** 7
+**Completadas:** 6
+**Pendientes:** 6
 
 ---
 
@@ -25,7 +25,7 @@
 - [x] `T004`: Revisar `vite.config.ts` - configuración build ✓
 
 ### FASE 2: Componentes Base
-- [ ] `T005`: Crear carpeta `src/components/`
+- [x] `T005`: Crear carpeta `src/components/` ✓
 - [ ] `T006`: Crear componente `Navbar.tsx` (solo estructura)
 - [ ] `T007`: Crear componente `Hero.tsx` (solo estructura)
 - [ ] `T008`: Crear componente `Services.tsx` (solo estructura)
@@ -69,6 +69,7 @@
 - [x] `T002`: Revisar `package.json` → **Resultado:** React 19.1.1, Tailwind 4.1.14, Vite 7.1.7, TypeScript 5.9.3. Tailwind ya configurado via @tailwindcss/vite plugin.
 - [x] `T003`: Revisar `tsconfig.json` → **Resultado:** Configuración correcta con project references. ES2022 target, strict mode, bundler resolution, react-jsx transform. Bien estructurado.
 - [x] `T004`: Revisar `vite.config.ts` → **Resultado:** Config minimalista con React+SWC y Tailwind v4 via plugin. Sin configuraciones custom. Correcto para proyecto base.
+- [x] `T005`: Crear carpeta `src/components/` → **Resultado:** Carpeta creada exitosamente en `/src/components/`
 
 ---
 
