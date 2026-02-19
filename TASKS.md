@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** Estructura base
 **En progreso:** Ninguna
-**Completadas:** 6
-**Pendientes:** 6
+**Completadas:** 7
+**Pendientes:** 5
 
 ---
 
@@ -26,7 +26,7 @@
 
 ### FASE 2: Componentes Base
 - [x] `T005`: Crear carpeta `src/components/` ✓
-- [ ] `T006`: Crear componente `Navbar.tsx` (solo estructura)
+- [x] `T006`: Crear componente `Navbar.tsx` (solo estructura) ✓
 - [ ] `T007`: Crear componente `Hero.tsx` (solo estructura)
 - [ ] `T008`: Crear componente `Services.tsx` (solo estructura)
 
@@ -70,6 +70,7 @@
 - [x] `T003`: Revisar `tsconfig.json` → **Resultado:** Configuración correcta con project references. ES2022 target, strict mode, bundler resolution, react-jsx transform. Bien estructurado.
 - [x] `T004`: Revisar `vite.config.ts` → **Resultado:** Config minimalista con React+SWC y Tailwind v4 via plugin. Sin configuraciones custom. Correcto para proyecto base.
 - [x] `T005`: Crear carpeta `src/components/` → **Resultado:** Carpeta creada exitosamente en `/src/components/`
+- [x] `T006`: Crear componente `Navbar.tsx` → **Resultado:** Componente base creado con estructura de navegación (nav, TODO comments para logo, links y CTA)
 
 ---
 
