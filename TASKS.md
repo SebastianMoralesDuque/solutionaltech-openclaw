@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** Estructura base
 **En progreso:** Ninguna
-**Completadas:** 7
-**Pendientes:** 5
+**Completadas:** 8
+**Pendientes:** 4
 
 ---
 
@@ -27,7 +27,7 @@
 ### FASE 2: Componentes Base
 - [x] `T005`: Crear carpeta `src/components/` ✓
 - [x] `T006`: Crear componente `Navbar.tsx` (solo estructura) ✓
-- [ ] `T007`: Crear componente `Hero.tsx` (solo estructura)
+- [x] `T007`: Crear componente `Hero.tsx` (solo estructura) ✓
 - [ ] `T008`: Crear componente `Services.tsx` (solo estructura)
 
 ### FASE 3: Estilos
@@ -71,6 +71,7 @@
 - [x] `T004`: Revisar `vite.config.ts` → **Resultado:** Config minimalista con React+SWC y Tailwind v4 via plugin. Sin configuraciones custom. Correcto para proyecto base.
 - [x] `T005`: Crear carpeta `src/components/` → **Resultado:** Carpeta creada exitosamente en `/src/components/`
 - [x] `T006`: Crear componente `Navbar.tsx` → **Resultado:** Componente base creado con estructura de navegación (nav, TODO comments para logo, links y CTA)
+- [x] `T007`: Crear componente `Hero.tsx` → **Resultado:** Componente base creado con estructura hero (section, TODO comments para título, subtítulo, botones CTA, imagen)
 
 ---
 
