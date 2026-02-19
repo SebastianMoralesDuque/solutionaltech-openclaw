@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** Estructura base
 **En progreso:** Ninguna
-**Completadas:** 11
-**Pendientes:** 2
+**Completadas:** 12
+**Pendientes:** 1
 
 ---
 
@@ -33,7 +33,7 @@
 ### FASE 3: Estilos
 - [x] `T009`: Configurar Tailwind CSS en el proyecto ✓
 - [x] `T010`: Crear `src/styles/globals.css` base ✓
-- [ ] `T011`: Definir colores de marca en CSS variables
+- [x] `T011`: Definir colores de marca en CSS variables → **Resultado:** Variables CSS añadidas: primario (azul), secundario (cyan), éxito/error/warning, fondos, textos y bordes
 - [ ] `T012`: Crear componente `Footer.tsx` (solo estructura)
 
 ---

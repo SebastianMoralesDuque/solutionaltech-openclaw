@@ -1,6 +1,41 @@
 /* globals.css - Estilos globales del proyecto */
 /* Tailwind CSS se importa desde index.css */
 
+/* ============================================
+   CSS Variables - Colores de Marca
+   ============================================ */
+:root {
+  /* Colores Primarios */
+  --color-primary: #2563eb;        /* Azul tecnológico */
+  --color-primary-dark: #1d4ed8;   /* Azul oscuro para hover */
+  --color-primary-light: #3b82f6;  /* Azul claro */
+
+  /* Colores Secundarios */
+  --color-secondary: #06b6d4;      /* Cyan - acento */
+  --color-secondary-dark: #0891b2;
+  --color-secondary-light: #22d3ee;
+
+  /* Colores de Éxito/Error/Warning */
+  --color-success: #10b981;        /* Verde */
+  --color-error: #ef4444;          /* Rojo */
+  --color-warning: #f59e0b;        /* Amarillo */
+
+  /* Fondos */
+  --color-bg-primary: #ffffff;     /* Fondo principal */
+  --color-bg-secondary: #f8fafc;   /* Fondo secundario */
+  --color-bg-dark: #0f172a;        /* Fondo oscuro (footer, etc.) */
+
+  /* Textos */
+  --color-text-primary: #1e293b;   /* Texto principal */
+  --color-text-secondary: #64748b; /* Texto secundario */
+  --color-text-muted: #94a3b8;     /* Texto muted */
+  --color-text-inverse: #ffffff;   /* Texto sobre fondos oscuros */
+
+  /* Bordes */
+  --color-border: #e2e8f0;
+  --color-border-dark: #cbd5e1;
+}
+
 /* Reset y base */
 * {
   margin: 0;
