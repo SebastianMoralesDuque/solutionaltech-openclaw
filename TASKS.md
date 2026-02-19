@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** Estructura base
 **En progreso:** Ninguna
-**Completadas:** 8
-**Pendientes:** 4
+**Completadas:** 9
+**Pendientes:** 3
 
 ---
 
@@ -28,7 +28,7 @@
 - [x] `T005`: Crear carpeta `src/components/` ✓
 - [x] `T006`: Crear componente `Navbar.tsx` (solo estructura) ✓
 - [x] `T007`: Crear componente `Hero.tsx` (solo estructura) ✓
-- [ ] `T008`: Crear componente `Services.tsx` (solo estructura)
+- [x] `T008`: Crear componente `Services.tsx` (solo estructura) ✓
 
 ### FASE 3: Estilos
 - [ ] `T009`: Configurar Tailwind CSS en el proyecto
@@ -72,6 +72,7 @@
 - [x] `T005`: Crear carpeta `src/components/` → **Resultado:** Carpeta creada exitosamente en `/src/components/`
 - [x] `T006`: Crear componente `Navbar.tsx` → **Resultado:** Componente base creado con estructura de navegación (nav, TODO comments para logo, links y CTA)
 - [x] `T007`: Crear componente `Hero.tsx` → **Resultado:** Componente base creado con estructura hero (section, TODO comments para título, subtítulo, botones CTA, imagen)
+- [x] `T008`: Crear componente `Services.tsx` → **Resultado:** Componente base creado con estructura de servicios (section, TODO comments para título, grid de servicios, CTA)
 
 ---
 
