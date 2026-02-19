@@ -11,7 +11,7 @@
 ## ESTADO ACTUAL
 **Fase:** Estructura base
 **En progreso:** Ninguna
-**Completadas:** 10
+**Completadas:** 11
 **Pendientes:** 2
 
 ---
@@ -32,7 +32,7 @@
 
 ### FASE 3: Estilos
 - [x] `T009`: Configurar Tailwind CSS en el proyecto ✓
-- [ ] `T010`: Crear `src/styles/globals.css` base
+- [x] `T010`: Crear `src/styles/globals.css` base ✓
 - [ ] `T011`: Definir colores de marca en CSS variables
 - [ ] `T012`: Crear componente `Footer.tsx` (solo estructura)
 
@@ -74,6 +74,7 @@
 - [x] `T007`: Crear componente `Hero.tsx` → **Resultado:** Componente base creado con estructura hero (section, TODO comments para título, subtítulo, botones CTA, imagen)
 - [x] `T008`: Crear componente `Services.tsx` → **Resultado:** Componente base creado con estructura de servicios (section, TODO comments para título, grid de servicios, CTA)
 - [x] `T009`: Configurar Tailwind CSS → **Resultado:** Ya configurado. Tailwind v4 via @tailwindcss/vite plugin, @import "tailwindcss" en index.css
+- [x] `T010`: Crear `src/styles/globals.css` → **Resultado:** Archivo creado con reset CSS, scroll-behavior smooth, font-family base y TODO comments
 
 ---
 

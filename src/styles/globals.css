@@ -1,0 +1,21 @@
+/* globals.css - Estilos globales del proyecto */
+/* Tailwind CSS se importa desde index.css */
+
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* TODO: Añadir estilos globales específicos del proyecto */
