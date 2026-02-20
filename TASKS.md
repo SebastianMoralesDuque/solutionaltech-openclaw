@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** Estructura base
 **En progreso:** Ninguna
-**Completadas:** 12
-**Pendientes:** 1
+**Completadas:** 13
+**Pendientes:** 0
 
 ---
 
@@ -34,7 +34,7 @@
 - [x] `T009`: Configurar Tailwind CSS en el proyecto ✓
 - [x] `T010`: Crear `src/styles/globals.css` base ✓
 - [x] `T011`: Definir colores de marca en CSS variables → **Resultado:** Variables CSS añadidas: primario (azul), secundario (cyan), éxito/error/warning, fondos, textos y bordes
-- [ ] `T012`: Crear componente `Footer.tsx` (solo estructura)
+- [x] `T012`: Crear componente `Footer.tsx` (solo estructura) ✓
 
 ---
 
@@ -75,6 +75,8 @@
 - [x] `T008`: Crear componente `Services.tsx` → **Resultado:** Componente base creado con estructura de servicios (section, TODO comments para título, grid de servicios, CTA)
 - [x] `T009`: Configurar Tailwind CSS → **Resultado:** Ya configurado. Tailwind v4 via @tailwindcss/vite plugin, @import "tailwindcss" en index.css
 - [x] `T010`: Crear `src/styles/globals.css` → **Resultado:** Archivo creado con reset CSS, scroll-behavior smooth, font-family base y TODO comments
+- [x] `T011`: Definir colores de marca en CSS variables → **Resultado:** Variables CSS añadidas: primario (azul), secundario (cyan), éxito/error/warning, fondos, textos y bordes
+- [x] `T012`: Crear componente `Footer.tsx` → **Resultado:** Componente base creado con estructura footer (footer, container, TODO comments para grid de columnas, copyright y links legales)
 
 ---
 
