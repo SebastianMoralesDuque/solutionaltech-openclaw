@@ -9,32 +9,23 @@
 ---
 
 ## ESTADO ACTUAL
-**Fase:** Estructura base
+**Fase:** Integración de componentes
 **En progreso:** Ninguna
 **Completadas:** 13
-**Pendientes:** 0
+**Pendientes:** 3
 
 ---
 
 ## BACKLOG (Tareas pendientes)
 
-### FASE 1: Estructura del Código
-- [x] `T001`: Listar todos los archivos en `src/` y subcarpetas ✓
-- [x] `T002`: Revisar `package.json` - dependencias instaladas ✓
-- [x] `T003`: Revisar `tsconfig.json` - configuración TypeScript ✓
-- [x] `T004`: Revisar `vite.config.ts` - configuración build ✓
+### FASE 4: Integración de Componentes
+- [x] `T013`: Importar componentes en `App.tsx` (Navbar, Hero, Services, Footer) ✓
+- [ ] `T014`: Añadir estilos de marca a componentes (usar CSS variables)
+- [ ] `T015`: Implementar contenido real del componente `Hero.tsx`
+- [ ] `T016`: Implementar contenido real del componente `Services.tsx`
 
-### FASE 2: Componentes Base
-- [x] `T005`: Crear carpeta `src/components/` ✓
-- [x] `T006`: Crear componente `Navbar.tsx` (solo estructura) ✓
-- [x] `T007`: Crear componente `Hero.tsx` (solo estructura) ✓
-- [x] `T008`: Crear componente `Services.tsx` (solo estructura) ✓
-
-### FASE 3: Estilos
-- [x] `T009`: Configurar Tailwind CSS en el proyecto ✓
-- [x] `T010`: Crear `src/styles/globals.css` base ✓
-- [x] `T011`: Definir colores de marca en CSS variables → **Resultado:** Variables CSS añadidas: primario (azul), secundario (cyan), éxito/error/warning, fondos, textos y bordes
-- [x] `T012`: Crear componente `Footer.tsx` (solo estructura) ✓
+### FASE 1-3: Completadas ✓
+*(Ver TASKS_ARCHIVE.md para detalles)
 
 ---
 
@@ -64,6 +55,8 @@
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
+
+- [x] `T013`: Importar componentes en `App.tsx` → **Resultado:** App.tsx actualizado para importar y usar Navbar, Hero, Services, Footer
 
 - [x] `T001`: Listar archivos en `src/` → **Resultado:** 4 archivos encontrados: `App.tsx`, `main.tsx`, `index.css`, `assets/react.svg`
 - [x] `T002`: Revisar `package.json` → **Resultado:** React 19.1.1, Tailwind 4.1.14, Vite 7.1.7, TypeScript 5.9.3. Tailwind ya configurado via @tailwindcss/vite plugin.
