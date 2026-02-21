@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** Integración de componentes
 **En progreso:** Ninguna
-**Completadas:** 13
-**Pendientes:** 3
+**Completadas:** 14
+**Pendientes:** 2
 
 ---
 
@@ -20,7 +20,7 @@
 
 ### FASE 4: Integración de Componentes
 - [x] `T013`: Importar componentes en `App.tsx` (Navbar, Hero, Services, Footer) ✓
-- [ ] `T014`: Añadir estilos de marca a componentes (usar CSS variables)
+- [x] `T014`: Añadir estilos de marca a componentes (usar CSS variables) ✓
 - [ ] `T015`: Implementar contenido real del componente `Hero.tsx`
 - [ ] `T016`: Implementar contenido real del componente `Services.tsx`
 
@@ -55,6 +55,8 @@
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
+
+- [x] `T014`: Añadir estilos de marca a componentes → **Resultado:** Todos los componentes (Navbar, Hero, Services, Footer) actualizados con CSS variables de marca. globals.css importado en index.css.
 
 - [x] `T013`: Importar componentes en `App.tsx` → **Resultado:** App.tsx actualizado para importar y usar Navbar, Hero, Services, Footer
 

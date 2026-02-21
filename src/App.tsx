@@ -5,7 +5,10 @@ import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 font-inter">
+    <div 
+      className="min-h-screen font-inter"
+      style={{ backgroundColor: 'var(--color-bg-secondary)' }}
+    >
       <Navbar />
       <main>
         <Hero />
