@@ -9,21 +9,22 @@
 ---
 
 ## ESTADO ACTUAL
-**Fase:** Integración de componentes
+**Fase:** Secciones adicionales y funcionalidad
 **En progreso:** Ninguna
-**Completadas:** 16
-**Pendientes:** 0
+**Completadas:** 17
+**Pendientes:** 3
 
 ---
 
 ## BACKLOG (Tareas pendientes)
 
-### FASE 4: Integración de Componentes
-- [x] `T013`: Importar componentes en `App.tsx` (Navbar, Hero, Services, Footer) ✓
-- [x] `T014`: Añadir estilos de marca a componentes (usar CSS variables) ✓
-- [x] `T015`: Implementar contenido real del componente `Hero.tsx` ✓
-- [x] `T016`: Implementar contenido real del componente `Services.tsx` ✓
+### FASE 5: Secciones Adicionales
+- [x] `T017`: Crear componente `Contact.tsx` con formulario de contacto ✓
+- [ ] `T018`: Crear componente `Testimonials.tsx` con testimonios de clientes
+- [ ] `T019`: Crear componente `About.tsx` con información de la empresa
+- [ ] `T020`: Implementar modo oscuro/claro con toggle en Navbar
 
+### FASE 4: Integración de Componentes ✓
 ### FASE 1-3: Completadas ✓
 *(Ver TASKS_ARCHIVE.md para detalles)
 
@@ -56,6 +57,7 @@
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
 
+- [x] `T017`: Crear componente `Contact.tsx` con formulario de contacto → **Resultado:** Componente Contact creado con formulario de 4 campos, info de contacto y estilos de marca. Importado en App.tsx.
 - [x] `T016`: Implementar contenido real del componente `Services.tsx` → **Resultado:** Services rediseñado con grid de 4 servicios profesionales, iconos, tags tecnológicos y copy de alto impacto.
 - [x] `T015`: Implementar contenido real del componente `Hero.tsx` → **Resultado:** Hero rediseñado con layout de 2 columnas, copy persuasivo de agencia IA y elementos decorativos.
 - [x] `T014`: Añadir estilos de marca a componentes → **Resultado:** Todos los componentes (Navbar, Hero, Services, Footer) actualizados con CSS variables de marca. globals.css importado en index.css.
