@@ -1,26 +1,30 @@
 // Services.tsx - Componente de sección de servicios
-// Estilos de marca aplicados con CSS variables
+// Contenido real optimizado para una agencia de automatización IA
 
 const servicios = [
   {
-    titulo: 'Automatización de Procesos',
-    descripcion: 'Optimizamos flujos de trabajo repetitivos mediante IA y scripts personalizados.',
-    icono: '⚙️',
-  },
-  {
-    titulo: 'Chatbots Inteligentes',
-    descripcion: 'Asistentes virtuales que atienden clientes 24/7 con respuestas contextuales.',
+    titulo: 'Agentes de IA Personalizados',
+    descripcion: 'Desarrollamos asistentes inteligentes que conocen tu negocio, responden a clientes y ejecutan tareas complejas de forma autónoma.',
     icono: '🤖',
+    tags: ['GPT-4o', 'Claude 3.5', 'RAG']
   },
   {
-    titulo: 'Integraciones API',
-    descripcion: 'Conectamos tus herramientas favoritas para un ecosistema unificado.',
-    icono: '🔗',
+    titulo: 'Automatización de Workflows',
+    descripcion: 'Conectamos tus herramientas (Make, Zapier, n8n) para eliminar tareas repetitivas y errores humanos en tus procesos diarios.',
+    icono: '⚡',
+    tags: ['Efficiency', 'Integration', 'Scale']
   },
   {
-    titulo: 'Análisis de Datos',
-    descripcion: 'Extraemos insights valiosos de tus datos con modelos de machine learning.',
+    titulo: 'Extracción y Análisis de Datos',
+    descripcion: 'Transformamos documentos no estructurados y grandes volúmenes de datos en insights accionables mediante modelos de lenguaje.',
     icono: '📊',
+    tags: ['Data Mining', 'ETL', 'AI Analysis']
+  },
+  {
+    titulo: 'Consultoría Estratégica IA',
+    descripcion: 'Auditamos tus procesos actuales para identificar las mayores oportunidades de ahorro y crecimiento mediante la implementación de IA.',
+    icono: '💡',
+    tags: ['Audit', 'Strategy', 'ROI']
   },
 ];
 
@@ -28,62 +32,103 @@ export function Services() {
   return (
     <section 
       id="servicios"
-      className="py-16 md:py-24"
+      className="py-20 md:py-32"
       style={{ backgroundColor: 'var(--color-bg-primary)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título de sección */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16 md:mb-24">
           <h2 
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-5xl font-extrabold mb-6"
             style={{ color: 'var(--color-text-primary)' }}
           >
-            Nuestros Servicios
+            Nuestras Soluciones de <span style={{ color: 'var(--color-primary)' }}>Próxima Generación</span>
           </h2>
           <p 
-            className="text-lg max-w-2xl mx-auto"
+            className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Soluciones a medida para potenciar tu negocio con tecnología de vanguardia
+            No solo instalamos herramientas, diseñamos el motor de crecimiento tecnológico 
+            que tu empresa necesita para dominar la era de la inteligencia artificial.
           </p>
         </div>
 
         {/* Grid de servicios */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {servicios.map((servicio, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl border transition-all hover:shadow-lg hover:-translate-y-1"
+              className="group p-8 md:p-10 rounded-3xl border transition-all duration-300 hover:shadow-2xl hover:border-transparent relative overflow-hidden"
               style={{ 
                 backgroundColor: 'var(--color-bg-secondary)',
                 borderColor: 'var(--color-border)'
               }}
             >
-              {/* Icono */}
-              <div 
-                className="text-4xl mb-4"
-                style={{ color: 'var(--color-primary)' }}
-              >
-                {servicio.icono}
+              {/* Efecto hover decorativo */}
+              <div className="absolute top-0 right-0 w-32 h-32 -mr-16 -mt-16 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-500"
+                style={{ backgroundColor: 'var(--color-primary)' }}
+              />
+
+              <div className="relative z-10">
+                {/* Icono */}
+                <div 
+                  className="text-5xl mb-6 inline-block p-4 rounded-2xl bg-white shadow-sm"
+                  style={{ color: 'var(--color-primary)' }}
+                >
+                  {servicio.icono}
+                </div>
+
+                {/* Título */}
+                <h3 
+                  className="text-2xl font-bold mb-4"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  {servicio.titulo}
+                </h3>
+
+                {/* Descripción */}
+                <p 
+                  className="text-base md:text-lg mb-8 leading-relaxed"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                >
+                  {servicio.descripcion}
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {servicio.tags.map(tag => (
+                    <span 
+                      key={tag}
+                      className="px-3 py-1 rounded-full text-xs font-semibold"
+                      style={{ 
+                        backgroundColor: 'rgba(37, 99, 235, 0.1)', 
+                        color: 'var(--color-primary)' 
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-
-              {/* Título */}
-              <h3 
-                className="text-xl font-semibold mb-2"
-                style={{ color: 'var(--color-text-primary)' }}
-              >
-                {servicio.titulo}
-              </h3>
-
-              {/* Descripción */}
-              <p 
-                className="text-sm leading-relaxed"
-                style={{ color: 'var(--color-text-secondary)' }}
-              >
-                {servicio.descripcion}
-              </p>
             </div>
           ))}
+        </div>
+        
+        {/* CTA Section below grid */}
+        <div className="mt-20 text-center">
+          <p className="text-sm font-bold uppercase tracking-widest mb-4" style={{ color: 'var(--color-text-muted)' }}>
+            ¿Tienes un reto específico?
+          </p>
+          <a 
+            href="#contacto" 
+            className="text-xl font-bold border-b-2 transition-all hover:opacity-80"
+            style={{ 
+              color: 'var(--color-primary)', 
+              borderColor: 'var(--color-primary)' 
+            }}
+          >
+            Cuéntanos tu proyecto y diseñamos una solución →
+          </a>
         </div>
       </div>
     </section>

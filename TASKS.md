@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** Integración de componentes
 **En progreso:** Ninguna
-**Completadas:** 14
-**Pendientes:** 2
+**Completadas:** 16
+**Pendientes:** 0
 
 ---
 
@@ -21,8 +21,8 @@
 ### FASE 4: Integración de Componentes
 - [x] `T013`: Importar componentes en `App.tsx` (Navbar, Hero, Services, Footer) ✓
 - [x] `T014`: Añadir estilos de marca a componentes (usar CSS variables) ✓
-- [ ] `T015`: Implementar contenido real del componente `Hero.tsx`
-- [ ] `T016`: Implementar contenido real del componente `Services.tsx`
+- [x] `T015`: Implementar contenido real del componente `Hero.tsx` ✓
+- [x] `T016`: Implementar contenido real del componente `Services.tsx` ✓
 
 ### FASE 1-3: Completadas ✓
 *(Ver TASKS_ARCHIVE.md para detalles)
@@ -56,8 +56,9 @@
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
 
+- [x] `T016`: Implementar contenido real del componente `Services.tsx` → **Resultado:** Services rediseñado con grid de 4 servicios profesionales, iconos, tags tecnológicos y copy de alto impacto.
+- [x] `T015`: Implementar contenido real del componente `Hero.tsx` → **Resultado:** Hero rediseñado con layout de 2 columnas, copy persuasivo de agencia IA y elementos decorativos.
 - [x] `T014`: Añadir estilos de marca a componentes → **Resultado:** Todos los componentes (Navbar, Hero, Services, Footer) actualizados con CSS variables de marca. globals.css importado en index.css.
-
 - [x] `T013`: Importar componentes en `App.tsx` → **Resultado:** App.tsx actualizado para importar y usar Navbar, Hero, Services, Footer
 
 - [x] `T001`: Listar archivos en `src/` → **Resultado:** 4 archivos encontrados: `App.tsx`, `main.tsx`, `index.css`, `assets/react.svg`
