@@ -1,3 +1,4 @@
+import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
@@ -8,20 +9,22 @@ import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div 
-      className="min-h-screen font-inter"
-      style={{ backgroundColor: 'var(--color-bg-secondary)' }}
-    >
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <Testimonials />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div 
+        className="min-h-screen font-inter transition-colors duration-300"
+        style={{ backgroundColor: 'var(--color-bg-secondary)' }}
+      >
+        <Navbar />
+        <main>
+          <Hero />
+          <Services />
+          <Testimonials />
+          <About />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

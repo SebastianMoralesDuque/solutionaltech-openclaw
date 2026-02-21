@@ -9,20 +9,20 @@
 ---
 
 ## ESTADO ACTUAL
-**Fase:** Secciones adicionales y funcionalidad
+**Fase:** FASE 5 Completada ✓
 **En progreso:** Ninguna
-**Completadas:** 19
-**Pendientes:** 1
+**Completadas:** 20
+**Pendientes:** 0
 
 ---
 
 ## BACKLOG (Tareas pendientes)
 
-### FASE 5: Secciones Adicionales
+### FASE 5: Secciones Adicionales ✓
 - [x] `T017`: Crear componente `Contact.tsx` con formulario de contacto ✓
 - [x] `T018`: Crear componente `Testimonials.tsx` con testimonios de clientes ✓
 - [x] `T019`: Crear componente `About.tsx` con información de la empresa ✓
-- [ ] `T020`: Implementar modo oscuro/claro con toggle en Navbar
+- [x] `T020`: Implementar modo oscuro/claro con toggle en Navbar ✓
 
 ### FASE 4: Integración de Componentes ✓
 ### FASE 1-3: Completadas ✓
@@ -57,6 +57,7 @@
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
 
+- [x] `T020`: Implementar modo oscuro/claro con toggle en Navbar → **Resultado:** ThemeContext creado con persistencia en localStorage, variables CSS dark mode añadidas, toggle con iconos sol/luna implementado en Navbar.
 - [x] `T019`: Crear componente `About.tsx` con información de la empresa → **Resultado:** Componente About creado con sección de misión, grid de stats (50+ proyectos, 15+ expertos), 4 valores de empresa e importado en App.tsx.
 - [x] `T018`: Crear componente `Testimonials.tsx` con testimonios de clientes → **Resultado:** Componente Testimonials creado con 3 testimonios, grid responsivo, sección de stats (50+ proyectos, 95% satisfacción, etc.) e importado en App.tsx.
 - [x] `T017`: Crear componente `Contact.tsx` con formulario de contacto → **Resultado:** Componente Contact creado con formulario de 4 campos, info de contacto y estilos de marca. Importado en App.tsx.
