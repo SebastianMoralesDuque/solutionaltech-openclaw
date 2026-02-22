@@ -1,6 +1,21 @@
 // Hero.tsx - Componente de sección hero principal
 // Contenido real y estructura optimizada
 
+import { motion } from 'framer-motion';
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0 },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
 export function Hero() {
   return (
     <section 
@@ -13,30 +28,43 @@ export function Hero() {
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <motion.div 
+          className="grid lg:grid-cols-2 gap-12 items-center"
+          variants={staggerContainer}
+          initial="initial"
+          animate="animate"
+        >
           <div className="text-left max-w-2xl">
             {/* Título principal */}
-            <h1 
+            <motion.h1 
               className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight mb-6"
               style={{ color: 'var(--color-text-primary)' }}
+              variants={fadeInUp}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
             >
               Escala tu negocio con la potencia de la{' '}
               <span className="block mt-2" style={{ color: 'var(--color-primary)' }}>
                 IA Generativa
               </span>
-            </h1>
+            </motion.h1>
 
             {/* Subtítulo/descripción */}
-            <p 
+            <motion.p 
               className="text-lg md:text-xl mb-10 leading-relaxed"
               style={{ color: 'var(--color-text-secondary)' }}
+              variants={fadeInUp}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
             >
               Diseñamos y desplegamos agentes de IA personalizados que automatizan tu soporte técnico, 
               ventas y flujos de trabajo internos. Deja que la tecnología trabaje por ti 24/7.
-            </p>
+            </motion.p>
 
             {/* Botones CTA */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4"
+              variants={fadeInUp}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
               <a
                 href="#contacto"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold text-white transition-all hover:scale-105 hover:shadow-xl"
@@ -54,10 +82,15 @@ export function Hero() {
               >
                 Explorar Soluciones
               </a>
-            </div>
+            </motion.div>
             
             {/* Prueba social rápida o stats */}
-            <div className="mt-12 flex items-center gap-8 border-t pt-8" style={{ borderColor: 'var(--color-border)' }}>
+            <motion.div 
+              className="mt-12 flex items-center gap-8 border-t pt-8" 
+              style={{ borderColor: 'var(--color-border)' }}
+              variants={fadeInUp}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
               <div>
                 <p className="text-2xl font-bold" style={{ color: 'var(--color-text-primary)' }}>+50%</p>
                 <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>Eficiencia Operativa</p>
@@ -67,11 +100,15 @@ export function Hero() {
                 <p className="text-2xl font-bold" style={{ color: 'var(--color-text-primary)' }}>24/7</p>
                 <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>Disponibilidad Total</p>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Imagen o representación visual */}
-          <div className="hidden lg:block relative">
+          <motion.div 
+            className="hidden lg:block relative"
+            variants={fadeInUp}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+          >
             <div 
               className="aspect-square rounded-3xl overflow-hidden shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500"
               style={{ backgroundColor: 'var(--color-bg-dark)' }}
@@ -101,8 +138,8 @@ export function Hero() {
                 <span className="text-xs text-green-600 font-medium">Production Ready</span>
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

@@ -9,24 +9,39 @@
 ---
 
 ## ESTADO ACTUAL
-**Fase:** FASE 5 Completada ✓
+**Fase:** FASE 6 - Mejoras y Nuevas Secciones
 **En progreso:** Ninguna
-**Completadas:** 20
-**Pendientes:** 0
+**Completadas:** 23
+**Pendientes:** 12
 
 ---
 
 ## BACKLOG (Tareas pendientes)
 
-### FASE 5: Secciones Adicionales ✓
-- [x] `T017`: Crear componente `Contact.tsx` con formulario de contacto ✓
-- [x] `T018`: Crear componente `Testimonials.tsx` con testimonios de clientes ✓
-- [x] `T019`: Crear componente `About.tsx` con información de la empresa ✓
-- [x] `T020`: Implementar modo oscuro/claro con toggle en Navbar ✓
+### FASE 6A: Animaciones Scroll-Triggered (4 tareas)
+- [x] `T021`: Instalar librería de animaciones (Framer Motion o AOS)
+- [x] `T022`: Añadir animación fade-in + slide-up a Hero
+- [x] `T023`: Añadir animación stagger a cards de Services
+- [ ] `T024`: Añadir animación a Testimonials y About
 
-### FASE 4: Integración de Componentes ✓
-### FASE 1-3: Completadas ✓
-*(Ver TASKS_ARCHIVE.md para detalles)
+### FASE 6B: Nueva Sección "Proceso" (3 tareas)
+- [ ] `T025`: Crear componente `Process.tsx` con 4 pasos del proceso de trabajo
+- [ ] `T026`: Añadir animación de línea conectora entre pasos
+- [ ] `T027`: Importar Process en App.tsx (entre Services y Testimonials)
+
+### FASE 6C: Nueva Sección "FAQ" (3 tareas)
+- [ ] `T028`: Crear componente `FAQ.tsx` con 5-6 preguntas frecuentes
+- [ ] `T029`: Implementar accordion/collapse functionality para respuestas
+- [ ] `T030`: Importar FAQ en App.tsx (entre Testimonials y About)
+
+### FASE 6D: Mejoras de Contenido (3 tareas)
+- [ ] `T031`: Actualizar datos de contacto reales (email, WhatsApp, ubicación)
+- [ ] `T032`: Actualizar estadísticas con números realistas (50+ proyectos → 20+, etc.)
+- [ ] `T033`: Añadir logos de tecnologías/herramientas usadas (sección Trust)
+
+### FASE 6E: Funcionalidad Extra (2 tareas)
+- [ ] `T034`: Implementar envío de formulario de contacto (EmailJS o webhook)
+- [ ] `T035`: Añadir meta tags SEO en index.html (title, description, OG)
 
 ---
 
@@ -56,28 +71,6 @@
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
-
-- [x] `T020`: Implementar modo oscuro/claro con toggle en Navbar → **Resultado:** ThemeContext creado con persistencia en localStorage, variables CSS dark mode añadidas, toggle con iconos sol/luna implementado en Navbar.
-- [x] `T019`: Crear componente `About.tsx` con información de la empresa → **Resultado:** Componente About creado con sección de misión, grid de stats (50+ proyectos, 15+ expertos), 4 valores de empresa e importado en App.tsx.
-- [x] `T018`: Crear componente `Testimonials.tsx` con testimonios de clientes → **Resultado:** Componente Testimonials creado con 3 testimonios, grid responsivo, sección de stats (50+ proyectos, 95% satisfacción, etc.) e importado en App.tsx.
-- [x] `T017`: Crear componente `Contact.tsx` con formulario de contacto → **Resultado:** Componente Contact creado con formulario de 4 campos, info de contacto y estilos de marca. Importado en App.tsx.
-- [x] `T016`: Implementar contenido real del componente `Services.tsx` → **Resultado:** Services rediseñado con grid de 4 servicios profesionales, iconos, tags tecnológicos y copy de alto impacto.
-- [x] `T015`: Implementar contenido real del componente `Hero.tsx` → **Resultado:** Hero rediseñado con layout de 2 columnas, copy persuasivo de agencia IA y elementos decorativos.
-- [x] `T014`: Añadir estilos de marca a componentes → **Resultado:** Todos los componentes (Navbar, Hero, Services, Footer) actualizados con CSS variables de marca. globals.css importado en index.css.
-- [x] `T013`: Importar componentes en `App.tsx` → **Resultado:** App.tsx actualizado para importar y usar Navbar, Hero, Services, Footer
-
-- [x] `T001`: Listar archivos en `src/` → **Resultado:** 4 archivos encontrados: `App.tsx`, `main.tsx`, `index.css`, `assets/react.svg`
-- [x] `T002`: Revisar `package.json` → **Resultado:** React 19.1.1, Tailwind 4.1.14, Vite 7.1.7, TypeScript 5.9.3. Tailwind ya configurado via @tailwindcss/vite plugin.
-- [x] `T003`: Revisar `tsconfig.json` → **Resultado:** Configuración correcta con project references. ES2022 target, strict mode, bundler resolution, react-jsx transform. Bien estructurado.
-- [x] `T004`: Revisar `vite.config.ts` → **Resultado:** Config minimalista con React+SWC y Tailwind v4 via plugin. Sin configuraciones custom. Correcto para proyecto base.
-- [x] `T005`: Crear carpeta `src/components/` → **Resultado:** Carpeta creada exitosamente en `/src/components/`
-- [x] `T006`: Crear componente `Navbar.tsx` → **Resultado:** Componente base creado con estructura de navegación (nav, TODO comments para logo, links y CTA)
-- [x] `T007`: Crear componente `Hero.tsx` → **Resultado:** Componente base creado con estructura hero (section, TODO comments para título, subtítulo, botones CTA, imagen)
-- [x] `T008`: Crear componente `Services.tsx` → **Resultado:** Componente base creado con estructura de servicios (section, TODO comments para título, grid de servicios, CTA)
-- [x] `T009`: Configurar Tailwind CSS → **Resultado:** Ya configurado. Tailwind v4 via @tailwindcss/vite plugin, @import "tailwindcss" en index.css
-- [x] `T010`: Crear `src/styles/globals.css` → **Resultado:** Archivo creado con reset CSS, scroll-behavior smooth, font-family base y TODO comments
-- [x] `T011`: Definir colores de marca en CSS variables → **Resultado:** Variables CSS añadidas: primario (azul), secundario (cyan), éxito/error/warning, fondos, textos y bordes
-- [x] `T012`: Crear componente `Footer.tsx` → **Resultado:** Componente base creado con estructura footer (footer, container, TODO comments para grid de columnas, copyright y links legales)
 
 ---
 

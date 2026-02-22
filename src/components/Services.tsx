@@ -1,6 +1,21 @@
 // Services.tsx - Componente de sección de servicios
 // Contenido real optimizado para una agencia de automatización IA
 
+import { motion } from 'framer-motion';
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0 },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
 const servicios = [
   {
     titulo: 'Agentes de IA Personalizados',
@@ -54,15 +69,23 @@ export function Services() {
         </div>
 
         {/* Grid de servicios */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <motion.div 
+          className="grid md:grid-cols-2 gap-8 lg:gap-12"
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {servicios.map((servicio, index) => (
-            <div
+            <motion.div
               key={index}
               className="group p-8 md:p-10 rounded-3xl border transition-all duration-300 hover:shadow-2xl hover:border-transparent relative overflow-hidden"
               style={{ 
                 backgroundColor: 'var(--color-bg-secondary)',
                 borderColor: 'var(--color-border)'
               }}
+              variants={fadeInUp}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
             >
               {/* Efecto hover decorativo */}
               <div className="absolute top-0 right-0 w-32 h-32 -mr-16 -mt-16 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-500"
@@ -110,9 +133,9 @@ export function Services() {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
         
         {/* CTA Section below grid */}
         <div className="mt-20 text-center">
