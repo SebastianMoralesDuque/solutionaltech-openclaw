@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** FASE 6 - Mejoras y Nuevas Secciones
 **En progreso:** Ninguna
-**Completadas:** 24
-**Pendientes:** 11
+**Completadas:** 25
+**Pendientes:** 10
 
 ---
 
@@ -27,7 +27,7 @@
 ### FASE 6B: Nueva Sección "Proceso" (3 tareas)
 - [x] `T025`: Crear componente `Process.tsx` con 4 pasos del proceso de trabajo
 - [x] `T026`: Añadir animación de línea conectora entre pasos
-- [ ] `T027`: Importar Process en App.tsx (entre Services y Testimonials)
+- [x] `T027`: Importar Process en App.tsx (entre Services y Testimonials)
 
 ### FASE 6C: Nueva Sección "FAQ" (3 tareas)
 - [ ] `T028`: Crear componente `FAQ.tsx` con 5-6 preguntas frecuentes
@@ -71,6 +71,8 @@
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
+
+- `T027`: Importado componente Process en App.tsx (entre Services y Testimonials) ✅
 
 ---
 
