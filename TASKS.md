@@ -25,8 +25,8 @@
 - [x] `T024`: Añadir animación a Testimonials y About
 
 ### FASE 6B: Nueva Sección "Proceso" (3 tareas)
-- [ ] `T025`: Crear componente `Process.tsx` con 4 pasos del proceso de trabajo
-- [ ] `T026`: Añadir animación de línea conectora entre pasos
+- [x] `T025`: Crear componente `Process.tsx` con 4 pasos del proceso de trabajo
+- [x] `T026`: Añadir animación de línea conectora entre pasos
 - [ ] `T027`: Importar Process en App.tsx (entre Services y Testimonials)
 
 ### FASE 6C: Nueva Sección "FAQ" (3 tareas)
