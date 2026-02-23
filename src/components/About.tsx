@@ -1,6 +1,21 @@
 // About.tsx - Componente de información de la empresa
 // Sección "Sobre nosotros" con misión, visión y valores
 
+import { motion } from 'framer-motion';
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0 },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
 export function About() {
   const values = [
     {
@@ -35,7 +50,12 @@ export function About() {
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-20">
           {/* Left - Text */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+          >
             <span 
               className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4"
               style={{ 
@@ -67,15 +87,19 @@ export function About() {
               Desde 2023, hemos implementado más de 50 soluciones de automatización 
               para clientes en sectores como tecnología, finanzas, retail y servicios profesionales.
             </p>
-          </div>
+          </motion.div>
 
           {/* Right - Stats/Visual */}
-          <div 
+          <motion.div 
             className="p-8 rounded-2xl border"
             style={{ 
               backgroundColor: 'var(--color-bg-primary)',
               borderColor: 'var(--color-border)'
             }}
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-4">
@@ -135,26 +159,38 @@ export function About() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Values Section */}
         <div>
-          <h3 
+          <motion.h3 
             className="text-2xl md:text-3xl font-bold text-center mb-12"
             style={{ color: 'var(--color-text-primary)' }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
           >
             Nuestros valores
-          </h3>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          </motion.h3>
+          <motion.div 
+            className="grid sm:grid-cols-2 md:grid-cols-4 gap-6"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {values.map((value, index) => (
-              <div 
+              <motion.div 
                 key={index}
                 className="p-6 rounded-xl border transition-all hover:shadow-md"
                 style={{ 
                   backgroundColor: 'var(--color-bg-primary)',
                   borderColor: 'var(--color-border)'
                 }}
+                variants={fadeInUp}
+                transition={{ duration: 0.5, ease: 'easeOut' }}
               >
                 <span className="text-4xl mb-4 block">{value.icon}</span>
                 <h4 
@@ -169,9 +205,9 @@ export function About() {
                 >
                   {value.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

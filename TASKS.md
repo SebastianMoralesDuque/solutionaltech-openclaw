@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** FASE 6 - Mejoras y Nuevas Secciones
 **En progreso:** Ninguna
-**Completadas:** 23
-**Pendientes:** 12
+**Completadas:** 24
+**Pendientes:** 11
 
 ---
 
@@ -22,7 +22,7 @@
 - [x] `T021`: Instalar librería de animaciones (Framer Motion o AOS)
 - [x] `T022`: Añadir animación fade-in + slide-up a Hero
 - [x] `T023`: Añadir animación stagger a cards de Services
-- [ ] `T024`: Añadir animación a Testimonials y About
+- [x] `T024`: Añadir animación a Testimonials y About
 
 ### FASE 6B: Nueva Sección "Proceso" (3 tareas)
 - [ ] `T025`: Crear componente `Process.tsx` con 4 pasos del proceso de trabajo

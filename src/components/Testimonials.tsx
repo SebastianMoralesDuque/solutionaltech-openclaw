@@ -1,6 +1,21 @@
 // Testimonials.tsx - Componente de testimonios de clientes
 // Sección social proof con testimonios reales
 
+import { motion } from 'framer-motion';
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0 },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
 export function Testimonials() {
   const testimonials = [
     {
@@ -62,15 +77,23 @@ export function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <motion.div 
+          className="grid md:grid-cols-3 gap-8"
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {testimonials.map((testimonial) => (
-            <div 
+            <motion.div 
               key={testimonial.id}
               className="p-8 rounded-2xl border transition-all hover:shadow-lg hover:scale-[1.02]"
               style={{ 
                 backgroundColor: 'var(--color-bg-secondary)',
                 borderColor: 'var(--color-border)'
               }}
+              variants={fadeInUp}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
             >
               {/* Quote */}
               <div className="mb-6">
@@ -111,14 +134,18 @@ export function Testimonials() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Stats */}
-        <div 
+        <motion.div 
           className="mt-16 p-8 rounded-2xl grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
           style={{ backgroundColor: 'rgba(37, 99, 235, 0.05)' }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div>
             <p 
@@ -174,9 +201,9 @@ export function Testimonials() {
               style={{ color: 'var(--color-text-secondary)' }}
             >
               Soporte disponible
-            </p>
-          </div>
-        </div>
+              </p>
+            </div>
+        </motion.div>
       </div>
     </section>
   );
