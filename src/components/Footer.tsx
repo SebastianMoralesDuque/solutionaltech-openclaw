@@ -61,9 +61,9 @@ export function Footer() {
               className="space-y-2 text-sm"
               style={{ color: 'var(--color-text-muted)' }}
             >
-              <li>info@aiautomation.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>Ciudad de México, MX</li>
+              <li>contact@ai-automation-agency.com</li>
+              <li>+54 9 11 5123-4567</li>
+              <li>Buenos Aires, Argentina</li>
             </ul>
           </div>
 

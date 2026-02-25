@@ -1,6 +1,3 @@
-// About.tsx - Componente de información de la empresa
-// Sección "Sobre nosotros" con misión, visión y valores
-
 import { motion } from 'framer-motion';
 
 const fadeInUp = {
@@ -16,33 +13,63 @@ const staggerContainer = {
   },
 };
 
-export function About() {
-  const values = [
+export function Trust() {
+  const technologies = [
     {
-      icon: "🤖",
-      title: "Innovación IA",
-      description: "Aplicamos las últimas tecnologías de IA para resolver problemas reales de negocio."
+      name: 'React',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+      color: '#61DAFB'
     },
     {
-      icon: "⚡",
-      title: "Eficiencia",
-      description: "Automatizamos procesos repetitivos para que tu equipo se enfoque en lo importante."
+      name: 'Next.js',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg',
+      color: '#000000'
     },
     {
-      icon: "🎯",
-      title: "Resultados",
-      description: "Medimos el éxito en métricas tangibles: tiempo ahorrado, costos reducidos, ingresos generados."
+      name: 'TypeScript',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript-logo.svg',
+      color: '#3178C6'
     },
     {
-      icon: "🤝",
-      title: "Colaboración",
-      description: "Trabajamos como extensión de tu equipo, no como proveedores externos."
+      name: 'Node.js',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg',
+      color: '#339933'
+    },
+    {
+      name: 'Python',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
+      color: '#3776AB'
+    },
+    {
+      name: 'Docker',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg',
+      color: '#2496ED'
+    },
+    {
+      name: 'AWS',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/AmazonWebservices_Logo.svg',
+      color: '#FF9900'
+    },
+    {
+      name: 'GitHub',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg',
+      color: '#181717'
+    },
+    {
+      name: 'VS Code',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg',
+      color: '#007ACC'
+    },
+    {
+      name: 'Framer Motion',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Framer_Motion_Logo.svg',
+      color: '#000000'
     }
   ];
 
   return (
     <section 
-      id="nosotros"
+      id="tecnologias"
       className="py-20 md:py-32"
       style={{ backgroundColor: 'var(--color-bg-secondary)' }}
     >
@@ -63,32 +90,29 @@ export function About() {
                 color: 'var(--color-primary)'
               }}
             >
-              Sobre nosotros
+              Tecnologías
             </span>
             <h2 
               className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight"
               style={{ color: 'var(--color-text-primary)' }}
             >
-              Automatizamos el futuro de{' '}
-              <span style={{ color: 'var(--color-primary)' }}>tu negocio</span>
+              Confía en las mejores herramientas
             </h2>
             <p 
               className="text-lg leading-relaxed mb-6"
               style={{ color: 'var(--color-text-secondary)' }}
             >
-              Somos un equipo de ingenieros y consultores especializados en inteligencia artificial 
-              y automatización de procesos. Ayudamos a empresas a transformar sus operaciones 
-              mediante soluciones tecnológicas que ahorran tiempo y generan valor.
+              Utilizamos tecnologías de vanguardia para construir soluciones robustas y escalables.
+              Nuestra experiencia abarca desde frameworks modernos hasta herramientas de DevOps y 
+              plataformas en la nube.
             </p>
             <p 
               className="text-lg leading-relaxed"
               style={{ color: 'var(--color-text-secondary)' }}
-
-              >
-                Desde 2023, hemos implementado más de 20 soluciones de automatización 
-                para clientes en sectores como tecnología, finanzas, retail y servicios profesionales.
-              </p>
-            </motion.div>
+            >
+              Estas son algunas de las tecnologías con las que trabajamos:
+            </p>
+          </motion.div>
           {/* Right - Stats/Visual */}
           <motion.div 
             className="p-8 rounded-2xl border"
@@ -96,12 +120,26 @@ export function About() {
               backgroundColor: 'var(--color-bg-primary)',
               borderColor: 'var(--color-border)'
             }}
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             <div className="grid grid-cols-2 gap-6">
+              <div className="text-center p-4">
+                <p 
+                  className="text-4xl md:text-5xl font-extrabold"
+                  style={{ color: 'var(--color-primary)' }}
+                >
+                  50+
+                </p>
+                <p 
+                  className="text-sm mt-2"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                >
+                  Tecnologías dominadas
+                </p>
+              </div>
               <div className="text-center p-4">
                 <p 
                   className="text-4xl md:text-5xl font-extrabold"
@@ -113,7 +151,7 @@ export function About() {
                   className="text-sm mt-2"
                   style={{ color: 'var(--color-text-secondary)' }}
                 >
-                  Proyectos entregados
+                  Frameworks
                 </p>
               </div>
               <div className="text-center p-4">
@@ -121,13 +159,13 @@ export function About() {
                   className="text-4xl md:text-5xl font-extrabold"
                   style={{ color: 'var(--color-primary)' }}
                 >
-                  8+
+                  15+
                 </p>
                 <p 
                   className="text-sm mt-2"
                   style={{ color: 'var(--color-text-secondary)' }}
                 >
-                  Expertos IA
+                  Herramientas DevOps
                 </p>
               </div>
               <div className="text-center p-4">
@@ -135,83 +173,56 @@ export function About() {
                   className="text-4xl md:text-5xl font-extrabold"
                   style={{ color: 'var(--color-primary)' }}
                 >
-                  2
+                  10+
                 </p>
                 <p 
                   className="text-sm mt-2"
                   style={{ color: 'var(--color-text-secondary)' }}
                 >
-                  Años de experiencia
-                </p>
-              </div>
-              <div className="text-center p-4">
-                <p 
-                  className="text-4xl md:text-5xl font-extrabold"
-                  style={{ color: 'var(--color-primary)' }}
-                >
-                  92%
-                </p>
-                <p 
-                  className="text-sm mt-2"
-                  style={{ color: 'var(--color-text-secondary)' }}
-                >
-                  Clientes satisfechos
+                  Plataformas Cloud
                 </p>
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Values Section */}
-        <div>
-          <motion.h3 
-            className="text-2xl md:text-3xl font-bold text-center mb-12"
-            style={{ color: 'var(--color-text-primary)' }}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-          >
-            Nuestros valores
-          </motion.h3>
-          <motion.div 
-            className="grid sm:grid-cols-2 md:grid-cols-4 gap-6"
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            {values.map((value, index) => (
-              <motion.div 
-                key={index}
-                className="p-6 rounded-xl border transition-all hover:shadow-md"
-                style={{ 
-                  backgroundColor: 'var(--color-bg-primary)',
-                  borderColor: 'var(--color-border)'
-                }}
-                variants={fadeInUp}
-                transition={{ duration: 0.5, ease: 'easeOut' }}
+        {/* Logos Section */}
+        <motion.div 
+          className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12"
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {technologies.map((tech) => (
+            <motion.div 
+              key={tech.name}
+              className="p-6 rounded-xl border transition-all hover:shadow-md"
+              style={{ 
+                backgroundColor: 'var(--color-bg-primary)',
+                borderColor: 'var(--color-border)'
+              }}
+              variants={fadeInUp}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+            >
+              <img 
+                src={tech.logo} 
+                alt={tech.name}
+                className="w-12 h-12 mx-auto mb-4"
+                style={{ filter: `drop-shadow(0 0 0 ${tech.color})` }}
+              />
+              <h4 
+                className="text-sm font-semibold text-center"
+                style={{ color: 'var(--color-text-primary)' }}
               >
-                <span className="text-4xl mb-4 block">{value.icon}</span>
-                <h4 
-                  className="text-lg font-semibold mb-2"
-                  style={{ color: 'var(--color-text-primary)' }}
-                >
-                  {value.title}
-                </h4>
-                <p 
-                  className="text-sm leading-relaxed"
-                  style={{ color: 'var(--color-text-secondary)' }}
-                >
-                  {value.description}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
+                {tech.name}
+              </h4>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
 }
 
-export default About;
+export default Trust;

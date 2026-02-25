@@ -38,11 +38,11 @@ export function Contact() {
                 <div>
                   <p className="text-sm font-medium" style={{ color: 'var(--color-text-muted)' }}>Email</p>
                   <a 
-                    href="mailto:info@aiautomation.com" 
+                    href="mailto:contact@ai-automation-agency.com" 
                     className="font-semibold hover:opacity-80 transition-opacity"
                     style={{ color: 'var(--color-text-primary)' }}
                   >
-                    info@aiautomation.com
+                    contact@ai-automation-agency.com
                   </a>
                 </div>
               </div>
@@ -57,11 +57,11 @@ export function Contact() {
                 <div>
                   <p className="text-sm font-medium" style={{ color: 'var(--color-text-muted)' }}>WhatsApp</p>
                   <a 
-                    href="https://wa.me/15551234567" 
+                    href="https://wa.me/541151234567" 
                     className="font-semibold hover:opacity-80 transition-opacity"
                     style={{ color: 'var(--color-text-primary)' }}
                   >
-                    +1 (555) 123-4567
+                    +54 9 11 5123-4567
                   </a>
                 </div>
               </div>
@@ -76,7 +76,7 @@ export function Contact() {
                 <div>
                   <p className="text-sm font-medium" style={{ color: 'var(--color-text-muted)' }}>Ubicación</p>
                   <p className="font-semibold" style={{ color: 'var(--color-text-primary)' }}>
-                    Remoto / Global
+                    Buenos Aires, Argentina
                   </p>
                 </div>
               </div>

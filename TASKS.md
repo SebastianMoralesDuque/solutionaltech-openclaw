@@ -30,18 +30,30 @@
 - [x] `T027`: Importar Process en App.tsx (entre Services y Testimonials)
 
 ### FASE 6C: Nueva Sección "FAQ" (3 tareas)
-- [ ] `T028`: Crear componente `FAQ.tsx` con 5-6 preguntas frecuentes
-- [ ] `T029`: Implementar accordion/collapse functionality para respuestas
-- [ ] `T030`: Importar FAQ en App.tsx (entre Testimonials y About)
+- [x] `T028`: Crear componente `FAQ.tsx` con 5-6 preguntas frecuentes
+- [x] `T029`: Implementar accordion/collapse functionality para respuestas
+- [x] `T030`: Importar FAQ en App.tsx (entre Testimonials y About)
 
 ### FASE 6D: Mejoras de Contenido (3 tareas)
-- [ ] `T031`: Actualizar datos de contacto reales (email, WhatsApp, ubicación)
-- [ ] `T032`: Actualizar estadísticas con números realistas (50+ proyectos → 20+, etc.)
+- [x] `T031`: Actualizar datos de contacto reales (email, WhatsApp, ubicación)
+- [x] `T032`: Actualizar estadísticas con números realistas (50+ proyectos → 20+, etc.)
 - [ ] `T033`: Añadir logos de tecnologías/herramientas usadas (sección Trust)
 
 ### FASE 6E: Funcionalidad Extra (2 tareas)
 - [ ] `T034`: Implementar envío de formulario de contacto (EmailJS o webhook)
 - [ ] `T035`: Añadir meta tags SEO en index.html (title, description, OG)
+
+### FASE 7A: Animaciones Hero (3 tareas)
+- [ ] `T036`: Añadir partículas flotantes sutiles en el fondo del Hero
+- [ ] `T037`: Efecto parallax suave al hacer scroll en Hero
+- [ ] `T038`: Animación typing effect en el título principal del Hero
+
+### FASE 7B: Estilo macOS (5 tareas)
+- [ ] `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados 12px
+- [ ] `T040`: Tarjetas con sombra suave, bordes 16px, efecto hover con elevación
+- [ ] `T041`: Botones pill-shaped (border-radius: 9999px), gradiente sutil
+- [ ] `T042`: Cards de servicios estilo ventana macOS con 3 puntos superiores (rojo, amarillo, verde)
+- [ ] `T043`: Ajustar espaciado generoso, nada tocando bordes de pantalla, máximo 90% width
 
 ---
 
@@ -72,7 +84,7 @@
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
 
-- `T027`: Importado componente Process en App.tsx (entre Services y Testimonials) ✅
+- `T032`: Actualizar estadísticas con números realistas (50+ proyectos → 20+, etc.) ✅
 
 ---
 
