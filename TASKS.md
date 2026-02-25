@@ -11,8 +11,8 @@
 ## ESTADO ACTUAL
 **Fase:** FASE 7 - Animaciones y Estilo macOS
 **En progreso:** Ninguna
-**Completadas:** 33
-**Pendientes:** 10
+**Completadas:** 35
+**Pendientes:** 8
 
 ---
 
@@ -22,9 +22,9 @@
 - [ ] `T034`: Implementar envío de formulario de contacto (EmailJS o webhook)
 - [ ] `T035`: Añadir meta tags SEO en index.html (title, description, OG)
 
-### FASE 7A: Animaciones Hero (3 tareas)
-- [ ] `T036`: Añadir partículas flotantes sutiles en el fondo del Hero
-- [ ] `T037`: Efecto parallax suave al hacer scroll en Hero
+### FASE 7A: Animaciones Hero (1 tarea)
+- [x] `T036`: Añadir partículas flotantes sutiles en el fondo del Hero ✅
+- [x] `T037`: Efecto parallax suave al mover mouse en Hero ✅
 - [ ] `T038`: Animación typing effect en el título principal del Hero
 
 ### FASE 7B: Estilo macOS (5 tareas)
@@ -39,6 +39,8 @@
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
 
+- `T036`: Añadidas partículas flotantes animadas con framer-motion en Hero ✅
+- `T037`: Implementado efecto parallax suave al mover mouse en Hero ✅
 - `T028`: Creado componente FAQ.tsx con 6 preguntas frecuentes ✅
 - `T029`: Implementado accordion/collapse functionality ✅
 - `T030`: Importado FAQ en App.tsx (entre Testimonials y About) ✅

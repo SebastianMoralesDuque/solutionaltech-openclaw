@@ -1,26 +1,24 @@
-// Hero.tsx - Componente de sección hero principal
-// Contenido real y estructura optimizada
-
 import { motion } from 'framer-motion';
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 40 },
-  animate: { opacity: 1, y: 0 },
-};
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
 export function Hero() {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const { clientX, clientY } = e;
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    const offsetX = (clientX - centerX) / 50;
+    const offsetY = (clientY - centerY) / 50;
+    
+    const image = document.querySelector('.rotate-3') as HTMLElement | null;
+    if (image) {
+      image.style.transform = `rotate(3deg) translate(${offsetX}px, ${offsetY}px)`;
+    }
+  };
+
   return (
     <section 
       className="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24 lg:pt-48 lg:pb-32"
       style={{ backgroundColor: 'var(--color-bg-secondary)' }}
+      onMouseMove={handleMouseMove}
     >
       {/* Elemento decorativo de fondo */}
       <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 rounded-full opacity-10 blur-3xl"
@@ -30,20 +28,18 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
           className="grid lg:grid-cols-2 gap-12 items-center"
-          variants={staggerContainer}
-          initial="initial"
-          animate="animate"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <div className="text-left max-w-2xl">
             {/* Título principal */}
             <motion.h1 
               className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight mb-6"
               style={{ color: 'var(--color-text-primary)' }}
-              variants={fadeInUp}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
             >
               Escala tu negocio con la potencia de la{' '}
-              <span className="block mt-2" style={{ color: 'var(--color-primary)' }}>
+              <span className="block mt-2 relative" style={{ color: 'var(--color-primary)' }}>
                 IA Generativa
               </span>
             </motion.h1>
@@ -52,8 +48,9 @@ export function Hero() {
             <motion.p 
               className="text-lg md:text-xl mb-10 leading-relaxed"
               style={{ color: 'var(--color-text-secondary)' }}
-              variants={fadeInUp}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             >
               Diseñamos y desplegamos agentes de IA personalizados que automatizan tu soporte técnico, 
               ventas y flujos de trabajo internos. Deja que la tecnología trabaje por ti 24/7.
@@ -62,8 +59,9 @@ export function Hero() {
             {/* Botones CTA */}
             <motion.div 
               className="flex flex-col sm:flex-row gap-4"
-              variants={fadeInUp}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
             >
               <a
                 href="#contacto"
@@ -88,8 +86,9 @@ export function Hero() {
             <motion.div 
               className="mt-12 flex items-center gap-8 border-t pt-8" 
               style={{ borderColor: 'var(--color-border)' }}
-              variants={fadeInUp}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
             >
               <div>
                 <p className="text-2xl font-bold" style={{ color: 'var(--color-text-primary)' }}>+50%</p>
@@ -106,7 +105,8 @@ export function Hero() {
           {/* Imagen o representación visual */}
           <motion.div 
             className="hidden lg:block relative"
-            variants={fadeInUp}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
           >
             <div 
@@ -141,8 +141,33 @@ export function Hero() {
           </motion.div>
         </motion.div>
       </div>
+      
+      {/* Partículas flotantes */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        {Array.from({ length: 20 }).map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute rounded-full"
+            style={{
+              width: `${Math.random() * 4 + 2}px`,
+              height: `${Math.random() * 4 + 2}px`,
+              background: `rgba(59, 130, 246, ${Math.random() * 0.3 + 0.1})`,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, -30, 0],
+              opacity: [0, 1, 0],
+            }}
+            transition={{
+              duration: Math.random() * 5 + 5,
+              repeat: Infinity,
+              ease: 'easeInOut',
+              delay: Math.random() * 3,
+            }}
+          />
+        ))}
+      </div>
     </section>
   );
 }
-
-export default Hero;
