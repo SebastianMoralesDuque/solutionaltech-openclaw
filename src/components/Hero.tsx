@@ -1,6 +1,26 @@
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 export function Hero() {
+  const [typedText, setTypedText] = useState("");
+  const [isTypingComplete, setIsTypingComplete] = useState(false);
+  const fullText = 'Escala tu negocio con la potencia de la IA Generativa';
+
+  useEffect(() => {
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index <= fullText.length) {
+        setTypedText(fullText.substring(0, index));
+        index++;
+      } else {
+        clearInterval(timer);
+        setIsTypingComplete(true);
+      }
+    }, 50);
+    
+    return () => clearInterval(timer);
+  }, []);
+
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const { clientX, clientY } = e;
     const centerX = window.innerWidth / 2;
@@ -33,15 +53,27 @@ export function Hero() {
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <div className="text-left max-w-2xl">
-            {/* Título principal */}
+            {/* Título principal con typing effect */}
             <motion.h1 
               className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight mb-6"
               style={{ color: 'var(--color-text-primary)' }}
             >
-              Escala tu negocio con la potencia de la{' '}
-              <span className="block mt-2 relative" style={{ color: 'var(--color-primary)' }}>
-                IA Generativa
-              </span>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.1 }}
+                >
+                  {typedText.substring(0, 40)} {!isTypingComplete && <span className="animate-pulse">|</span>}
+                </motion.span>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <span className="block mt-2 relative" style={{ color: 'var(--color-primary)' }}>
+                    {typedText.substring(40)}
+                  </span>
+                </motion.span>
             </motion.h1>
 
             {/* Subtítulo/descripción */}

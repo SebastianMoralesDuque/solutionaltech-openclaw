@@ -25,7 +25,7 @@
 ### FASE 7A: Animaciones Hero (1 tarea)
 - [x] `T036`: Añadir partículas flotantes sutiles en el fondo del Hero ✅
 - [x] `T037`: Efecto parallax suave al mover mouse en Hero ✅
-- [ ] `T038`: Animación typing effect en el título principal del Hero
+- [x] `T038`: Animación typing effect en el título principal del Hero ✅
 
 ### FASE 7B: Estilo macOS (5 tareas)
 - [ ] `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados 12px
