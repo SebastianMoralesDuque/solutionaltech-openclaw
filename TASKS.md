@@ -27,7 +27,6 @@
 - [x] `T037`: Efecto parallax suave al mover mouse en Hero ✅
 - [x] `T038`: Animación typing effect en el título principal del Hero ✅
   *Implementado typing effect con animación de cursor en Hero.tsx:57-77*
-  *Implementado typing effect con animación de cursor en Hero.tsx:57-77*
 
 ### FASE 7B: Estilo macOS (5 tareas)
 - [ ] `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados 12px
