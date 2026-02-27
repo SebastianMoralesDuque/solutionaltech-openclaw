@@ -40,6 +40,7 @@
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
 
+- `T038`: Animación typing effect en título principal del Hero ✅
 - `T036`: Añadidas partículas flotantes animadas con framer-motion en Hero ✅
 - `T037`: Implementado efecto parallax suave al mover mouse en Hero ✅
 - `T028`: Creado componente FAQ.tsx con 6 preguntas frecuentes ✅
