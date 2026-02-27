@@ -21,9 +21,9 @@
 ## Resultado
 - ✅ Verificación completada: typing effect ya implementado en Hero.tsx:57-77
 - ✅ Animación de cursor funcionando correctamente
-- ✅ Build exitoso con `npm run build` (437 modules, built in 2.03s)
+- ✅ Build exitoso con `npm run build` (437 modules, built in 2.00s)
 - ✅ Tarea T038 verificada: todo funciona correctamente
-- ✅ Re-verificación completada: build OK
+- ✅ Re-verificación completada: build OK (437 modules, built in 2.00s)
 
 ## Notas
 - Este archivo es gestionado automáticamente por Opencode
