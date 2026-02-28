@@ -165,8 +165,7 @@ export function Process() {
           </p>
           <a
             href="#contacto"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-white transition-all hover:opacity-90 hover:scale-105"
-            style={{ backgroundColor: 'var(--color-primary)' }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-white transition-all hover:opacity-90 hover:scale-105 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]"
           >
             Empezar ahora
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

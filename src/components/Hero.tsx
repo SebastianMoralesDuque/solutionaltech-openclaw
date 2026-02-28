@@ -97,14 +97,13 @@ export function Hero() {
             >
               <a
                 href="#contacto"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold text-white transition-all hover:scale-105 hover:shadow-xl"
-                style={{ backgroundColor: 'var(--color-primary)' }}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-white transition-all hover:scale-105 hover:shadow-xl bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]"
               >
                 Hablar con un experto
               </a>
               <a
                 href="#servicios"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold border-2 transition-all hover:bg-white hover:shadow-md"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold border-2 transition-all hover:bg-white/10 hover:shadow-md"
                 style={{ 
                   color: 'var(--color-primary)',
                   borderColor: 'var(--color-primary)',

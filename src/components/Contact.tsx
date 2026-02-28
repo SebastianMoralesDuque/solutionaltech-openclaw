@@ -223,8 +223,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full py-4 rounded-xl font-bold text-white transition-all hover:shadow-lg hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
-                style={{ backgroundColor: 'var(--color-primary)' }}
+                className="w-full py-4 rounded-full font-bold text-white transition-all hover:shadow-lg hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]"
               >
                 {isLoading ? 'Enviando...' : 'Enviar mensaje'}
               </button>

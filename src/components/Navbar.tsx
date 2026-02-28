@@ -80,10 +80,7 @@ export function Navbar() {
             {/* Botón CTA */}
             <a
               href="#contacto"
-              className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg font-semibold text-white transition-all hover:shadow-lg"
-              style={{ 
-                backgroundColor: 'var(--color-primary)',
-              }}
+              className="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full font-semibold text-white transition-all hover:shadow-lg bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]"
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--color-primary-dark)'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--color-primary)'}
             >
