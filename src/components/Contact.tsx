@@ -1,7 +1,36 @@
 // Contact.tsx - Componente de sección de contacto
 // Formulario de contacto con estilos de marca
 
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 export function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError('');
+    setIsSuccess(false);
+
+    try {
+      await emailjs.sendForm(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        formRef.current!,
+        'YOUR_PUBLIC_KEY'
+      );
+      setIsSuccess(true);
+      formRef.current?.reset();
+    } catch (err) {
+      setError('Error al enviar el mensaje. Por favor, inténtalo de nuevo.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
   return (
     <section 
       id="contacto"
@@ -91,7 +120,18 @@ export function Contact() {
               borderColor: 'var(--color-border)'
             }}
           >
-            <form className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+              {isSuccess && (
+                <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-400 text-center">
+                  ¡Mensaje enviado con éxito! Te contactaremos pronto.
+                </div>
+              )}
+
+              {error && (
+                <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-center">
+                  {error}
+                </div>
+              )}
               <div>
                 <label 
                   htmlFor="nombre" 
@@ -182,10 +222,11 @@ export function Contact() {
 
               <button
                 type="submit"
-                className="w-full py-4 rounded-xl font-bold text-white transition-all hover:shadow-lg hover:scale-[1.02]"
+                disabled={isLoading}
+                className="w-full py-4 rounded-xl font-bold text-white transition-all hover:shadow-lg hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 style={{ backgroundColor: 'var(--color-primary)' }}
               >
-                Enviar mensaje
+                {isLoading ? 'Enviando...' : 'Enviar mensaje'}
               </button>
 
               <p 

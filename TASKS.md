@@ -19,7 +19,7 @@
 ## BACKLOG (Tareas pendientes)
 
 ### FASE 6E: Funcionalidad Extra (2 tareas)
-- [ ] `T034`: Implementar envío de formulario de contacto (EmailJS o webhook)
+- [x] `T034`: Implementar envío de formulario de contacto (EmailJS o webhook)
 - [ ] `T035`: Añadir meta tags SEO en index.html (title, description, OG)
 
 ### FASE 7A: Animaciones Hero (1 tarea)
@@ -39,6 +39,9 @@
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
+
+- `T034`: Implementado envío de formulario de contacto con EmailJS ✅
+  *Añadido estados isLoading, isSuccess, error y handler handleSubmit en Contact.tsx*
 
 - `T038`: Animación typing effect en título principal del Hero ✅
 - `T036`: Añadidas partículas flotantes animadas con framer-motion en Hero ✅
