@@ -8,14 +8,11 @@ export function Navbar() {
 
   return (
     <nav 
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b shadow-sm transition-colors duration-300"
-      style={{ 
-        backgroundColor: isDark ? 'rgba(15, 23, 42, 0.95)' : 'rgba(255, 255, 255, 0.95)',
-        borderColor: 'var(--color-border)'
-      }}
+      className="fixed top-3 left-1/2 -translate-x-1/2 z-50 backdrop-blur-lg bg-white/70 dark:bg-slate-900/70 border border-white/20 dark:border-white/10 shadow-lg rounded-2xl transition-all duration-300"
+      style={{ maxWidth: '90vw' }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-6 py-3">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <span 

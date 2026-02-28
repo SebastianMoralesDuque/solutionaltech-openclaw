@@ -29,7 +29,7 @@
   *Implementado typing effect con animación de cursor en Hero.tsx:57-77*
 
 ### FASE 7B: Estilo macOS (5 tareas)
-- [ ] `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados 12px
+- [x] `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados 12px
 - [ ] `T040`: Tarjetas con sombra suave, bordes 16px, efecto hover con elevación
 - [ ] `T041`: Botones pill-shaped (border-radius: 9999px), gradiente sutil
 - [ ] `T042`: Cards de servicios estilo ventana macOS con 3 puntos superiores (rojo, amarillo, verde)
@@ -39,6 +39,9 @@
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
+
+- `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados ✅
+  *Implementado con backdrop-blur-lg, bg-white/70, border-radius rounded-2xl*
 
 - `T034`: Implementado envío de formulario de contacto con EmailJS ✅
   *Añadido estados isLoading, isSuccess, error y handler handleSubmit en Contact.tsx*
