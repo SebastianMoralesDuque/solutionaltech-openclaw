@@ -87,7 +87,7 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <motion.div 
               key={testimonial.id}
-              className="p-8 rounded-2xl border transition-all hover:shadow-lg hover:scale-[1.02]"
+              className="p-8 rounded-2xl border shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl hover:scale-[1.02]"
               style={{ 
                 backgroundColor: 'var(--color-bg-secondary)',
                 borderColor: 'var(--color-border)'

@@ -30,7 +30,7 @@
 
 ### FASE 7B: Estilo macOS (5 tareas)
 - [x] `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados 12px
-- [ ] `T040`: Tarjetas con sombra suave, bordes 16px, efecto hover con elevación
+- [x] `T040`: Tarjetas con sombra suave, bordes 16px, efecto hover con elevación
 - [ ] `T041`: Botones pill-shaped (border-radius: 9999px), gradiente sutil
 - [ ] `T042`: Cards de servicios estilo ventana macOS con 3 puntos superiores (rojo, amarillo, verde)
 - [ ] `T043`: Ajustar espaciado generoso, nada tocando bordes de pantalla, máximo 90% width
@@ -39,6 +39,9 @@
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
+
+- `T040`: Tarjetas con sombra suave, bordes 16px, efecto hover con elevación ✅
+  *Implementado rounded-2xl (16px), shadow-lg, hover:-translate-y-1 hover:shadow-xl en Services, Testimonials, About, Process*
 
 - `T035`: Añadir meta tags SEO en index.html ✅
   *Añadidos meta description, keywords, Open Graph y Twitter Cards*

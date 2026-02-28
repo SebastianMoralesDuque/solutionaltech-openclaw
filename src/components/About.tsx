@@ -91,7 +91,7 @@ export function About() {
 
           {/* Right - Stats/Visual */}
           <motion.div 
-            className="p-8 rounded-2xl border"
+            className="p-8 rounded-2xl border shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl"
             style={{ 
               backgroundColor: 'var(--color-bg-primary)',
               borderColor: 'var(--color-border)'
@@ -184,7 +184,7 @@ export function About() {
             {values.map((value, index) => (
               <motion.div 
                 key={index}
-                className="p-6 rounded-xl border transition-all hover:shadow-md"
+                className="p-6 rounded-2xl border shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl"
                 style={{ 
                   backgroundColor: 'var(--color-bg-primary)',
                   borderColor: 'var(--color-border)'

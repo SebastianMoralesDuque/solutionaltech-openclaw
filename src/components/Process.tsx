@@ -95,7 +95,7 @@ export function Process() {
               transition={{ duration: 0.5, ease: 'easeOut' }}
             >
               <div
-                className="p-8 rounded-2xl border transition-all duration-300 hover:shadow-xl h-full"
+                className="p-8 rounded-2xl border shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl h-full"
                 style={{
                   backgroundColor: 'var(--color-bg-primary)',
                   borderColor: 'var(--color-border)',

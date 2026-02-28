@@ -79,7 +79,7 @@ export function Services() {
           {servicios.map((servicio, index) => (
             <motion.div
               key={index}
-              className="group p-8 md:p-10 rounded-3xl border transition-all duration-300 hover:shadow-2xl hover:border-transparent relative overflow-hidden"
+              className="group p-8 md:p-10 rounded-2xl border shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-transparent relative overflow-hidden"
               style={{ 
                 backgroundColor: 'var(--color-bg-secondary)',
                 borderColor: 'var(--color-border)'
