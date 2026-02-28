@@ -79,7 +79,7 @@ export function Services() {
           {servicios.map((servicio, index) => (
             <motion.div
               key={index}
-              className="group p-8 md:p-10 rounded-2xl border shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-transparent relative overflow-hidden"
+              className="group p-0 rounded-2xl border shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-transparent relative overflow-hidden"
               style={{ 
                 backgroundColor: 'var(--color-bg-secondary)',
                 borderColor: 'var(--color-border)'
@@ -87,12 +87,15 @@ export function Services() {
               variants={fadeInUp}
               transition={{ duration: 0.5, ease: 'easeOut' }}
             >
-              {/* Efecto hover decorativo */}
-              <div className="absolute top-0 right-0 w-32 h-32 -mr-16 -mt-16 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-500"
-                style={{ backgroundColor: 'var(--color-primary)' }}
-              />
+              {/* MacOS Window Title Bar */}
+              <div className="flex items-center gap-2 px-4 py-3 border-b" style={{ borderColor: 'var(--color-border)', backgroundColor: 'rgba(0,0,0,0.03)' }}>
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
 
-              <div className="relative z-10">
+              {/* Card Content */}
+              <div className="p-8 md:p-10">
                 {/* Icono */}
                 <div 
                   className="text-5xl mb-6 inline-block p-4 rounded-2xl bg-white shadow-sm"

@@ -32,13 +32,16 @@
 - [x] `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados 12px
 - [x] `T040`: Tarjetas con sombra suave, bordes 16px, efecto hover con elevación
 - [x] `T041`: Botones pill-shaped (border-radius: 9999px), gradiente sutil
-- [ ] `T042`: Cards de servicios estilo ventana macOS con 3 puntos superiores (rojo, amarillo, verde)
+- [x] `T042`: Cards de servicios estilo ventana macOS con 3 puntos superiores (rojo, amarillo, verde)
 - [ ] `T043`: Ajustar espaciado generoso, nada tocando bordes de pantalla, máximo 90% width
 
 ---
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
+
+- `T042`: Cards de servicios estilo ventana macOS con 3 puntos superiores (rojo, amarillo, verde) ✅
+  *Implementado con barra de título en cada card, 3 dots (red, yellow, green) en Services.tsx*
 
 - `T041`: Botones pill-shaped (border-radius: 9999px), gradiente sutil ✅
   *Implementado rounded-full y gradiente bg-gradient-to-r en Hero, Navbar, Contact, Process*
