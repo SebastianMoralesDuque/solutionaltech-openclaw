@@ -20,7 +20,7 @@
 
 ### FASE 6E: Funcionalidad Extra (2 tareas)
 - [x] `T034`: Implementar envío de formulario de contacto (EmailJS o webhook)
-- [ ] `T035`: Añadir meta tags SEO en index.html (title, description, OG)
+- [x] `T035`: Añadir meta tags SEO en index.html (title, description, OG)
 
 ### FASE 7A: Animaciones Hero (1 tarea)
 - [x] `T036`: Añadir partículas flotantes sutiles en el fondo del Hero ✅
@@ -39,6 +39,9 @@
 
 ## COMPLETADAS HOY
 *(Vacío al inicio de cada día)*
+
+- `T035`: Añadir meta tags SEO en index.html ✅
+  *Añadidos meta description, keywords, Open Graph y Twitter Cards*
 
 - `T039`: Navbar con glassmorphism (blur + transparencia), bordes redondeados ✅
   *Implementado con backdrop-blur-lg, bg-white/70, border-radius rounded-2xl*
