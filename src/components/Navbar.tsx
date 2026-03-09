@@ -11,7 +11,7 @@ export function Navbar() {
       className="fixed top-3 left-1/2 -translate-x-1/2 z-50 backdrop-blur-lg bg-white/70 dark:bg-slate-900/70 border border-white/20 dark:border-white/10 shadow-lg rounded-2xl transition-all duration-300"
       style={{ maxWidth: '90vw' }}
     >
-      <div className="max-w-7xl mx-auto px-6 py-3">
+      <div className="max-w-[90%] mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">

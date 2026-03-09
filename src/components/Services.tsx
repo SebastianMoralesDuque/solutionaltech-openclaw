@@ -50,7 +50,7 @@ export function Services() {
       className="py-20 md:py-32"
       style={{ backgroundColor: 'var(--color-bg-primary)' }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título de sección */}
         <div className="text-center mb-16 md:mb-24">
           <h2 

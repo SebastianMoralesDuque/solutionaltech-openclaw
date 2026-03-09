@@ -7,7 +7,7 @@ export function Footer() {
       className="py-12"
       style={{ backgroundColor: 'var(--color-bg-dark)' }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid de columnas */}
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Columna 1: Logo + descripción */}

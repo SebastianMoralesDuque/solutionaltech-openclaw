@@ -45,7 +45,7 @@ export function Hero() {
         style={{ backgroundColor: 'var(--color-primary)' }}
       />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
           className="grid lg:grid-cols-2 gap-12 items-center"
           initial={{ opacity: 0, y: 40 }}
